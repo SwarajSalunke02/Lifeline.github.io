@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>
+            makeappointment
+        </title>
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <section class="top">
+            <nav>
+                <a href="index.htm"><img src="images/logomain1.png"></a>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="index.htm">HOME</a></li>
+                        <div class="dropdown">
+                            <div class="dropbtn">SPECIALIST</div>
+                            <div class="dropdown-content">
+                                <a href="#">Cardiologist</a>
+                                <a href="#">Allergist</a>
+                                <a href="#">Anesthesiologist</a>
+                                <a href="#">Chiropractor</a>
+                                <a href="#">Dentist</a>                          
+                                <a href="#">More!</a>
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <li><a href="index.htm#tabH">TOP HOSPITAL</a></li>
+                        <li><a href="index.htm#tabD">DOCTOR</a></li>
+                        <li><a href="index.htm#tabA">ABOUT</a></li> 
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <!--1 section end-->
+        
+        <div class="fields">
+            <center><b><h2>Book Appoinment</h2></b></center>
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            
+                <label for="cnum">Contact Number</label>
+                <input type="text" id="cnum" name="cnum" placeholder="Your contact number" required>
+               
+                <label for="gmail">gmail</label>
+                <input type="text" id="gmail" name="gmail" placeholder="Your Gmail id">
+              
+                <label for="city">city</label>
+                <input type="text" id="city" name="city" placeholder="Your city name" required>
+
+                <label for="Date"> Date</label>
+                <input type="date" id="Adate" name="Adate" required>
+
+
+                <label for="Time">Time </label>
+                <input type="time" id="Atime" name="Atime" required>
+                
+                <input type="file" id="ipfile">
+                <button onclick="myfun()"></button>
+
+                <script>
+                    function myfun(){
+                        var x= document.getElementById("ipfile");
+                        x.disebled = true;
+                    }
+                </script>
+
+
+                <input type="submit" value="Submit">
+                <input type="Reset" value="clear">
+
+                
+              </form>
+        </div>
+        </body>
+</html>
